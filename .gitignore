@@ -177,7 +177,8 @@ cython_debug/
 .dvc/cache/
 .dvc/tmp/
 *.dvc.lock
-data_dvc/  # Ignore local DVC storage
+# ignore local DVC storage
+data_dvc/  
 
 # Data and models
 data/
