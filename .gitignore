@@ -183,7 +183,9 @@ cython_debug/
 data_dvc/  
 
 # Data and models
-data/
+data/*
+!data/*.csv.dvc
+!data/.gitignore
 models/
 *.csv
 *.pkl
