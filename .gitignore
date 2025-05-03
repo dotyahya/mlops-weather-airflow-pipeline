@@ -172,3 +172,23 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+*.dvc.lock
+data_dvc/  # Ignore local DVC storage
+
+# Data and models
+data/
+models/
+*.csv
+*.pkl
+
+# Airflow
+airflow.db
+logs/
+*.log
+
+# MLflow
+mlruns/
