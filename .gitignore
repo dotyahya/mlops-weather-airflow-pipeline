@@ -179,6 +179,7 @@ cython_debug/
 *.dvc.lock
 !*.dvc
 !.dvc/
+dvc.lock
 # ignore local DVC storage
 data_dvc/  
 
@@ -197,3 +198,4 @@ logs/
 
 # MLflow
 mlruns/
+/mlruns
