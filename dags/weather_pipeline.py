@@ -7,7 +7,6 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 from src.data.gather_data import collect_weather_data
 from src.preprocessing.preprocess_data import preprocess_data
-from src.models.train_model import train_model
 
 default_args = {
     "owner": "airflow",
@@ -34,10 +33,4 @@ preprocess_task = PythonOperator(
     dag=dag,
 )
 
-train_task = PythonOperator(
-    task_id="train_model",
-    python_callable=train_model,
-    dag=dag,
-)
-
-collect_task >> preprocess_task >> train_task
+collect_task >> preprocess_task
