@@ -177,11 +177,17 @@ cython_debug/
 .dvc/cache/
 .dvc/tmp/
 *.dvc.lock
-data_dvc/  # Ignore local DVC storage
+!*.dvc
+!.dvc/
+dvc.lock
+# ignore local DVC storage
+data_dvc/  
 
 # Data and models
-data/
-models/
+data/*
+!data/*.csv.dvc
+!models/*.py
+models/*
 *.csv
 *.pkl
 
@@ -192,3 +198,4 @@ logs/
 
 # MLflow
 mlruns/
+/mlruns
