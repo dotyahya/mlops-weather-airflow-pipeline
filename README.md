@@ -1,7 +1,7 @@
 # MLOps Weather Pipeline
 A data engineering pipeline for collecting, preprocessing, and tracking weather data using Airflow (Docker) and DVC (local storage) on Windows 11.
 
-Note: Weather data is obtained from OpenWeatherMap API
+Note: Weather data is obtained from Visual Crossing API
 
 ## Setup
 1. Clone the repository.
