@@ -185,8 +185,8 @@ data_dvc/
 # Data and models
 data/*
 !data/*.csv.dvc
-!data/.gitignore
-models/
+!models/*.py
+models/*
 *.csv
 *.pkl
 
